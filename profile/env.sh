@@ -1,0 +1,1 @@
+export WORKSPACE='$HOME/workspace'
