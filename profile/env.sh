@@ -1,1 +1,1 @@
-export WORKSPACE='$HOME/workspace'
+export WORKSPACE="$HOME/workspace"
