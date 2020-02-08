@@ -4,6 +4,6 @@ for DOTFILE in $HOME/env/dotfiles/*;do
     fi
     LINK_NAME=".$(basename -- $DOTFILE)"
     TARGET="$HOME/$LINK_NAME"
-    echo "ln -s $DOTFILE $TARGET"      
-    ln -s $DOTFILE $TARGET
+    echo "ln -sf $DOTFILE $TARGET"      
+    ln -sf $DOTFILE $TARGET
 done
