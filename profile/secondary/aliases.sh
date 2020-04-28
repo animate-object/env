@@ -3,7 +3,9 @@
 
 # general
 alias c=clear
-alias l='ls -a1 --color=auto'
+alias l='ls -a1G'
+# nb color auto seems to be linux platform specific... test -G on linux
+# alias l='ls -a1 --color=auto'
 alias '..'='cd ..'
 alias '..2'='cd ../..'
 alias '..3'='cd ../../..'
