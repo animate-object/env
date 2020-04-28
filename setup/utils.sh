@@ -1,3 +1,10 @@
 # some bash utilities I like a lot
-sudo apt update
-sudo apt install tree vim curl awscli jq
+
+if [[ "$OS" == "DEFAULT" ]]; then
+	sudo apt update
+	sudo apt install tree vim curl awscli jq
+elif [[ "$OS" == "OSX" ]]; then
+	brew install tree curl jq
+else
+        echo "OS $OS not supported"
+fi
