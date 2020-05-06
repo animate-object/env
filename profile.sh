@@ -13,3 +13,5 @@ fi
  # autoload -Uz compinit
  # compinit
 #fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
