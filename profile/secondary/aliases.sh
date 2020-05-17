@@ -3,7 +3,15 @@
 
 # general
 alias c=clear
-alias l='ls -a1G'
+if is_mac
+then
+    alias grep='grep -G'
+    alias l='ls -a1G'
+else
+    alias grep='grep --color=auto'
+    alias l='ls -a1 --color=auto'
+fi
+
 # nb color auto seems to be linux platform specific... test -G on linux
 # alias l='ls -a1 --color=auto'
 alias '..'='cd ..'
