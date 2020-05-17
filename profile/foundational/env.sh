@@ -2,7 +2,27 @@ export WORKSPACE="$HOME/workspace"
 export HISTSIZE=100000
 export SAVEHIST=$HISTSIZE
 
-export OS="$([[ $(uname) == "Darwin" ]] && echo 'OSX' || echo 'DEFAULT')"
+is_mac() {
+  if [[ $(uname) == "Darwin" ]]
+  then
+    return 0
+  else
+    return 1
+  fi
+}
+
+is_linux() {
+  if [[ $(uname) == "Linux" ]]
+  then
+    return 0
+  else
+    return 1
+  fi
+}
+
+
+
+
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH=$PATH:~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools
 

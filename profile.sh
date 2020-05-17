@@ -7,11 +7,4 @@ if [ -d "$HOME/env/workplace" ]; then
     source "$HOME/env/workplace/profile.sh"
 fi
 
-
-#if type brew &>/dev/null; then
- # FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
- # autoload -Uz compinit
- # compinit
-#fi
-
 export PATH="$HOME/.cargo/bin:$PATH"

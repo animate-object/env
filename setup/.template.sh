@@ -1,7 +1,6 @@
-# some bash utilities I like a lot
 
-if [[ "$OS" == "DEFAULT" ]]; then
-elif [[ "$OS" == "OSX" ]]; then
+if is_linux then
+elif is_mac; then
 else
-    echo "OS $OS not supported"
+    echo "OS $(uname) not supported"
 fi

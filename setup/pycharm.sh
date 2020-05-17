@@ -1,8 +1,8 @@
 # some bash utilities I like a lot
 
-if [[ "$OS" == "OSX" ]]; then
+if is_mac; then
     echo "Installing pycharm-ce via homebrew"
     brew cask install pycharm-ce
 else
-    echo "OS $OS not supported"
+    echo "OS $(uname) not supported"
 fi
