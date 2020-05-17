@@ -1,1 +1,3 @@
-echo "It's hip to be square"
+echo "============================"
+echo "|| Ars longa, vita brevis ||"
+echo "----------------------------"
