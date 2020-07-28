@@ -9,3 +9,7 @@ tdif() {
     local interval_sec=${2:-15}
     watch -n$interval_sec "git diff --numstat ${source_branch}"
 }
+
+hgrep() {
+    history | grep $@
+}
